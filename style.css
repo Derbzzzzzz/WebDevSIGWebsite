@@ -1,0 +1,58 @@
+html{
+    font-size: 16px;
+}
+
+:root{
+    --color-1: #fff0f3;
+    --color-2: #ffb3c1;
+    --color-3: #ff4d6d;
+    --color-4: #a4133c;
+    --color-5: #590d22;
+}
+
+body{
+    margin: 0px;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+}
+
+.scroller section {
+    scroll-snap-align: start;
+}
+
+section{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 20px;
+}
+
+.section1{
+    background-color: var(--color-1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section2{
+    background-color: var(--color-2)
+}
+
+.section3{
+    background-color: var(--color-3)
+}
+
+.section4{
+    background-color: var(--color-4)
+}
