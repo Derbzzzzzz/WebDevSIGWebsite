@@ -12,6 +12,8 @@ html{
     --color-4: #a4133c;
     --color-5: #590d22;
 
+    --hg-opacity: 1;
+
     --font-montserrat:'Montserrat', sans-serif;
     --font-fraunces: 'Fraunces', serif;
 }
@@ -21,6 +23,7 @@ body{
     height: 100vh;
     overflow: auto;
 }
+
 
 .pop{
     border-left: 2px solid var(--color-4);
@@ -33,16 +36,30 @@ body{
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
 
+
 .flexCol{
     display: flex;
     flex-direction: column;
 }
 
+/* nav function */
+.navContentContainer{
+    position: sticky;
+    top: 100vh;
+}
+
+.navContentContainer>div:hover{
+    color: lime;
+}
+
+/* end of nav function */
 
 .scroller {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    overscroll-behavior-inline: contain;
+
 
 }
 
@@ -61,7 +78,7 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .bigContainer{
@@ -69,7 +86,12 @@ section{
 }
 
 .section2{
-    background-color: var(--color-2)
+    background-color: var(--color-2);
+    font-size: 0.8rem;
+}
+
+.limitWidth{
+    max-width: 80%;
 }
 
 .section3{
@@ -77,5 +99,10 @@ section{
 }
 
 .section4{
-    background-color: var(--color-4)
+    background-color: var(--color-4);
+    font-size: 0.8rem;
+}
+
+li.spaceInList{
+    margin-bottom: 5%;
 }

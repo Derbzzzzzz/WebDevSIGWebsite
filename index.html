@@ -5,31 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="nav.js" defer></script>
     <title>Web Dev SIG</title>
+    <!-- onClick='document.getElementById("middle").scrollIntoView({behavior:"smooth"});' -->
+    <!-- We want to possibly ditch the scroller and then make two divs (one for the first home page and one for the three other section)
+    This would allow us to add the navigation to this div containing the three sections
+    use position relative and then sticky -->
 </head>
 <body>
     <article class="scroller">
         <section class="section1 flexCol">
-            <div class="grow pop bigContainer">
+            <div class="pop bigContainer">
                 <p>Web Development<br>Special Interest Group</p>
             </div>
         </section>
+        <div class="nav">
+            <div class="navTitle">Navigation</div>
+            <div class="navContentContainer flexCol">
+                <div class="navContent1">Home</div>
+                <div class="navContent2">About</div>
+                <div class="navContent3">Members</div>
+                <div class="navContent4">Links</div>
+            </div>
+        </div>
         <section class="section2 flexCol">
-            <h1>About The Web Development Sig</h1>
-            <p>The web dev sig is where a bunch of web devs do a bunch of web endevors</p>
-            <h2>Topics Covered:</h2>
-            <ul>
-                <li>HTML 5</li>
-                <li>CSS 3</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>And More!</li>
-            </ul>
+            <div class="limitWidth">
+                <h1>About The Web Development SIG</h1>
+                <p>The web dev sig is where a bunch of web devs do a bunch of web endevors</p>
+                <h3>Topics Covered:</h3>
+                <ul>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>And More!</li>
+                </ul>
+            </div>
         </section>
-        <section class="section3 flexCol">
-            <h1>ando is at fault</h1>
+        <section id = "middle" class="section3 flexCol">
+            <div>
+                <h1>ando is at fault</h1>
+            </div>
         </section>
-        <section class="section4  flexCol LINKS"></section>
+        <section class="section4 flexCol LINKS">
+            <div class="limitWidth">
+                <h2>Links to Member's Portfolio</h2>
+                <ul>
+                    <li class="spaceInList">Ryan</li>
+                    <li class="spaceInList">Ryan 2</li>
+                    <li class="spaceInList">RyAnn</li>
+                    <li class="spaceInList">Nayr</li>
+                </ul>
+            </div>
+        </section>
     </div>
 </body>
 </html>
