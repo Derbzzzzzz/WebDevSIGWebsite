@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
 html{
-    font-size: 3vw;
+    font-size: 16px;
     font-family: var(--font-montserrat);
 }
 
@@ -21,7 +29,7 @@ html{
 body{
     margin: 0px;
     height: 100vh;
-    overflow: auto;
+    overflow-y: hidden;
 }
 
 
@@ -43,28 +51,49 @@ body{
 }
 
 /* nav function */
-.navContentContainer{
-    position: sticky;
-    top: 100vh;
-}
+
 
 .navContentContainer>div:hover{
     color: lime;
 }
 
 /* end of nav function */
-
-.scroller {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    overscroll-behavior-inline: contain;
-
-
+main{
+    display: flex;
+    flex-direction: column;
 }
 
-.scroller section {
-    scroll-snap-align: start;
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 0px;
+    width: 200px;
+    padding: 0px;
+    align-self: flex-end;
+}
+
+.navContainer{
+    margin-top: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.navContentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1rem;
+}
+
+.navContent{
+    cursor: pointer;
 }
 
 section{
@@ -78,11 +107,16 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .bigContainer{
     padding: 10px;
+}
+
+.arrow{
+    margin-top: 50px;
+    cursor: pointer;
 }
 
 .section2{

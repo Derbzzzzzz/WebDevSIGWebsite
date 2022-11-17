@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <script src="nav.js" defer></script>
     <title>Web Dev SIG</title>
@@ -13,51 +14,57 @@
     use position relative and then sticky -->
 </head>
 <body>
-    <article class="scroller">
+    <article class="mainContainer">
         <section class="section1 flexCol">
             <div class="pop bigContainer">
                 <p>Web Development<br>Special Interest Group</p>
             </div>
+            <span class="material-symbols-outlined arrow grow" onClick='document.querySelector(".section2").scrollIntoView({behavior:"smooth"});'>arrow_downward</span>
         </section>
-        <div class="nav">
-            <div class="navTitle">Navigation</div>
-            <div class="navContentContainer flexCol">
-                <div class="navContent1">Home</div>
-                <div class="navContent2">About</div>
-                <div class="navContent3">Members</div>
-                <div class="navContent4">Links</div>
+        <main>
+            <div class="nav">
+                <div class="navContainer">
+                    <div class="navTitle">Navigation</div>
+                    <div class="navContentContainer flexCol">
+                        <div class="navContent navContent1" onClick='document.querySelector(".section1").scrollIntoView({behavior:"smooth"});'>Home</div>
+                        <div class="navContent navContent2" onClick='document.querySelector(".section2").scrollIntoView({behavior:"smooth"});'>About</div>
+                        <div class="navContent navContent3" onClick='document.querySelector(".section3").scrollIntoView({behavior:"smooth"});'>Members</div>
+                        <div class="navContent navContent4" onClick='document.querySelector(".section4").scrollIntoView({behavior:"smooth"});'>Links</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <section class="section2 flexCol">
-            <div class="limitWidth">
-                <h1>About The Web Development SIG</h1>
-                <p>The web dev sig is where a bunch of web devs do a bunch of web endevors</p>
-                <h3>Topics Covered:</h3>
-                <ul>
-                    <li>HTML 5</li>
-                    <li>CSS 3</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                    <li>And More!</li>
-                </ul>
-            </div>
-        </section>
-        <section id = "middle" class="section3 flexCol">
-            <div>
-                <h1>ando is at fault</h1>
-            </div>
-        </section>
-        <section class="section4 flexCol LINKS">
-            <div class="limitWidth">
-                <h2>Links to Member's Portfolio</h2>
-                <ul>
-                    <li class="spaceInList">Ryan</li>
-                    <li class="spaceInList">Ryan 2</li>
-                    <li class="spaceInList">RyAnn</li>
-                    <li class="spaceInList">Nayr</li>
-                </ul>
-            </div>
-        </section>
+            <section class="section2 flexCol">
+                <div class="limitWidth">
+                    <h1>About The Web Development SIG</h1>
+                    <p>The web dev sig is where a bunch of web devs do a bunch of web endevors</p>
+                    <h3>Topics Covered:</h3>
+                    <ul>
+                        <!-- Consider using cards -->
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>And More!</li>
+                    </ul>
+                </div>
+            </section>
+            <section id = "middle" class="section3 flexCol">
+                <div>
+                    <h1>ando is at fault</h1>
+                </div>
+            </section>
+            <section class="section4 flexCol LINKS">
+                <div class="limitWidth">
+                    <h2>Links to Member's Portfolio</h2>
+                    <ul>
+                        <li class="spaceInList">Ryan</li>
+                        <li class="spaceInList">Ryan 2</li>
+                        <li class="spaceInList">RyAnn</li>
+                        <li class="spaceInList">Nayr</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
