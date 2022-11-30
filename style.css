@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
 
+/* remove list styles */
+ul[role='list'],
+ol[role='list'],
+li,
+ul {
+    list-style: none;
+    padding: 0;
+}
 /* Style for Google Material Symbols */
 
 .material-symbols-outlined {
@@ -80,6 +88,13 @@ main{
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    background-color: blue;
+    padding-left: 1rem;
+    transform: translateX(100%);
+}
+.navContainerBack{
+    transform: translateX(0);
+    transition-duration: 100ms;
 }
 
 .navTitle{
@@ -108,6 +123,14 @@ section{
     padding: 20px;
 }
 
+.section2, .section3, .section4{
+    /* padding-right: 200px; */
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 /* Section 1 */
 
 .section1{
@@ -131,7 +154,10 @@ section{
 
 .section2{
     background-color: var(--color-2);
-    font-size: 1.5rem;
+}
+
+.list{
+    list-style: none;
 }
 
 .limitWidth{
@@ -144,9 +170,29 @@ section{
 
 .section4{
     background-color: var(--color-4);
-    font-size: 0.8rem;
 }
 
 li.spaceInList{
     margin-bottom: 5%;
 }
+
+/* Card */
+.cardContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+.card{
+    font-size: 1rem;
+    height: 210px;
+    width: 210px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffb3c1;
+    
+}
+
+/* -------------- */
+/* css animations */
+/* -------------- */
+

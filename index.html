@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <script src="nav.js" defer></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' defer></script>
     <title>Web Dev SIG</title>
     <!-- onClick='document.getElementById("middle").scrollIntoView({behavior:"smooth"});' -->
     <!-- We want to possibly ditch the scroller and then make two divs (one for the first home page and one for the three other section)
@@ -23,7 +24,7 @@
         </section>
         <main>
             <div class="nav">
-                <div class="navContainer">
+                <div class="navContainer navContainerBack" data-hidden>
                     <div class="navTitle">Navigation</div>
                     <div class="navContentContainer flexCol">
                         <div class="navContent navContent1" onClick='document.querySelector(".section1").scrollIntoView({behavior:"smooth"});'>Home</div>
@@ -35,7 +36,7 @@
             </div>
             <section class="section2 flexCol">
                 <div class="limitWidth">
-                    <h1>About The Web Development SIG</h1>
+                    <h1>About The Web Dev SIG</h1>
                     <p>The web dev sig is where a bunch of web devs do a bunch of web endevors</p>
                     <h3>Topics Covered:</h3>
                     <ul>
@@ -49,19 +50,64 @@
                 </div>
             </section>
             <section id = "middle" class="section3 flexCol">
-                <div>
-                    <h1>ando is at fault</h1>
-                </div>
+                    <h1>Members of the Web Dev SIG</h1>
+                        <div class="cardContainer">
+                            <div class="pop card">
+                                <h2>Ryan Wahle</h2>
+                                <p>Role: Co-Leader</p>
+                                <p>Major: Computer Science</p>
+                                <p>Favorite Programming Language: HTML</p>
+                            </div>
+                            <div class="pop card">
+                                <h2>John Lin</h2>
+                                <p>Role: Co-Leader</p>
+                                <p>Major: Computer Science & IT</p>
+                                <p>Favorite Programming Language: Brain F*ck</p>
+                            </div>
+                            <div class="pop card">
+                                <h2>Connor Johnson</h2>
+                                <p>Role: General Member</p>
+                                <p>Major: Computer Engineering</p>
+                                <p>Favorite Programming Language: x86 Assembly</p>
+                            </div>
+                            <div class="pop card">
+                                <h2>Ando Pepe</h2>
+                                <p>Role: General Member</p>
+                                <p>Major: Computer Science</p>
+                                <p>Favorite Programming Language: Blender</p>
+                            </div>
+                        </div>
             </section>
             <section class="section4 flexCol LINKS">
-                <div class="limitWidth">
-                    <h2>Links to Member's Portfolio</h2>
-                    <ul>
-                        <li class="spaceInList">Ryan</li>
-                        <li class="spaceInList">Ryan 2</li>
-                        <li class="spaceInList">RyAnn</li>
-                        <li class="spaceInList">Nayr</li>
-                    </ul>
+                <h1>Links to Member Socials</h1>
+                <div class="cardContainer">
+                    <div class="pop card">
+                        <h2>Ryan Wahle</h2>
+                        <a href="https://www.linkedin.com">
+                            <img src = "">
+                        </a>
+                        <p>Major: Computer Science</p>
+                        <p>Favorite Programming Language: HTML</p>
+                    </div>
+                    <div class="pop card">
+                        <h2>John Lin</h2>
+                        <p>Role: Co-Leader</p>
+                        <p>Major: Computer Science & IT</p>
+                        <p>Favorite Programming Language: Brain F*ck</p>
+                    </div>
+                    <div class="pop card">
+                        <h2>Connor Johnson</h2>
+                        <i class='fab fa-discord'></i>
+                        <p>Role: General Member</p>
+                        <p>Major: Computer Engineering</p>
+                        <p>Favorite Programming Language: x86 Assembly</p>
+                    </div>
+                    <div class="pop card">
+                        <h2>Ando Pepe</h2>
+                        <p>Role: General Member</p>
+                        <p>Major: Computer Science</p>
+                        <p>Favorite Programming Language: Blender</p>
+                    </div>
                 </div>
             </section>
         </main>
